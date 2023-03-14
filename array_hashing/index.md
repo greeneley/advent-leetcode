@@ -1,5 +1,5 @@
 
-## 1. Problem Contains duplicate
+### 1. Problem Contains duplicate
 
 [Contains-Duplicate](leetcode.com/problems/contains-duplicate)
 - Solution:
