@@ -50,3 +50,25 @@ var isAnagram = function(s, t) {
 		return uniqueS.every((element, index) => uniqueT[index] === element)
 };
 ```
+
+### 3. Two sum
+[Two Sum](https://leetcode.com/problems/two-sum)
+
+# Code
+```
+/**
+ * @param {number[]} nums
+ * @param {number} target
+ * @return {number[]}
+ */
+var twoSum = function(nums, target) {
+   for (let i = 0; i < nums.length; i++) {
+    const valueStartIndex = nums[i];
+    const complement = target - nums[i];
+    const endIndex = nums.indexOf(complement, i + 1);
+    if (endIndex > i) {
+      return [i, endIndex];
+    }
+  }
+};
+```
